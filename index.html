@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title">Pomotodo</title>
+    <link rel="icon" type="image/x-icon" href="./tomato.ico" />
+    <script type="text/javascript" src="potatoes.js"></script>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div id="container">
+        <header id="logo">
+            <a href="#">Pomotodo</a>
+        </header>
+        <div id="pomo_container">
+            <div id="tomatoes_container">
+                <div id="button">
+                    <button type="button">Start Pomo</button>
+                </div>
+                <div id="completed_tomato_info">
+                    <div class="time"> Nov 3 </div>
+                    <div id="completed_tomato_num">Finished 2 pomos</div>
+                </div>
+                <div id="completed_tomato_list">
+                    <div><span class="time">22:13 - 23:38 </span> CS224d lecture1 </div>
+                    <div><span class="time">22:53 - 23:18 </span> 算法分析与设计展示 </div>
+                </div>
+            </div>
+            <div id="potatoes_container">
+                <div id="todo_input">
+                    <input type="text" name="to_do_input" placeholder="Add a new todo" />
+                    <object id="enter_svg" data="Enter.svg" type="image/svg+xml"></object>
+                </div>
+                <div id="todo_list">
+                    <ul>
+                        <li>
+                            <input type="checkbox" />
+                            <input type="text" value="系分课部件设计作业" readonly="readonly"/>
+                        </li>
+                        <li>
+                            <input type="checkbox" />
+                            <input type="text" value="多媒体设计大作业JS部分" readonly="readonly"/>
+                        </li>
+                        <li>
+                            <input type="checkbox" />
+                            <input type="text" value="英语期中听力准备" readonly="readonly"/>
+                        </li>
+                    </ul>
+                </div>
+                <div id="completed_todo">
+                    <div>Completed todos</div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" checked /> <span> 多媒体设计大作业HTML部分 </span>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked /> <span> MLaPP小组展示</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

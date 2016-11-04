@@ -1,0 +1,201 @@
+body div#container {
+    /*font-family: "Helvetica Neue,Helvetica,Arial,sans-serif";*/
+    /*font-family: '"Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif';*/
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    padding: 0 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    width: auto;
+    min-height: 640px;
+}
+
+body div#pomo_container {
+    width: auto;
+    display: block;
+    float: none;
+}
+
+body div#container header#logo {
+    font-family: '"Helvetica Neue", "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif';
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: 800;
+    height: 48px;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 20px;
+}
+
+body div#container header#logo a {
+    text-decoration: none;
+    color: black;
+}
+
+body div#container div#tomatoes_container, div#potatoes_container {
+    position: relative;
+    width: 43%;
+    float: left;
+    background-color: #FFF;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    min-width: 100px;
+    margin: 8px;
+    min-height: 250px;
+}
+
+@media (max-width: 800px) {
+    body div#container div#tomatoes_container, div#potatoes_container {
+        width: 95%;
+    }
+}
+
+body div#container div#tomatoes_container div#button {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0 0 1em;
+    border-bottom: 1px solid #DDD;
+}
+
+body div#container div#tomatoes_container div#button button {
+    width: 100%;
+    height: 2.5em;
+    line-height: 2.4em;
+    font-size: 1em;
+    background: #f4f4f4;
+    border: 1px solid #BBB;
+    color: #666;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+body div#container div#tomatoes_container div#completed_tomato_info {
+    overflow: hidden;
+    color: #999;
+    margin-bottom: 12px;
+}
+
+body div#container div#tomatoes_container div#completed_tomato_info div.time {
+    float: left;
+}
+
+body div#container div#tomatoes_container div#completed_tomato_info div#completed_tomato_num {
+    float: right
+}
+
+body div#container div#tomatoes_container div#completed_tomato_list div {
+    font-size: .95em;
+    line-height: 1.5em;
+}
+
+body div#container div#tomatoes_container div#completed_tomato_list span.time {
+    color: #999;
+    margin-right: 12px;
+}
+
+body div#container div#tomatoes_container div#button button:hover {
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+body div#container div#potatoes_container div#todo_input {
+    width: 100%;
+    margin: 0 0 1em;
+    padding: 0 0 1em;
+    border-bottom: 1px solid #DDD;
+    position: relative;
+}
+
+body div#container div#potatoes_container div#todo_input input {
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 2.5em;
+    line-height: 1.4em;
+    height: 2.5em;
+    border-radius: 3px;
+    padding: .5em 1.5em .5em .5em;
+    /*Add Box sizing to make the right size*/
+    /*[http://stackoverflow.com/questions/6586302/add-padding-to-html-text-input-field]*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body div#container div#potatoes_container div#todo_input object#enter_svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2.5em;
+    padding: .75em;
+    fill: #999;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.7em;
+    display: none;
+}
+
+body div#container div#potatoes_container div#todo_input object#enter_svg svg:hover {
+    cursor: pointer;
+}
+
+body div#container div#potatoes_container div#todo_list ul {
+    padding: 0 0 1em;
+    border-bottom: 1px solid #DDD;
+}
+
+body div#container div#potatoes_container div#todo_list ul li {
+    list-style-type: none;
+    padding: 6px 6px;
+}
+
+body div#container div#potatoes_container div#todo_list ul li input {
+    margin: 0;
+}
+
+body div#container div#potatoes_container div#todo_list ul li input[type=text] {
+    padding: 0;
+    border: 0;
+    font-size: .97em;
+    margin-left: 4px;
+}
+
+/*http://www.solagirl.net/override-chromes-automatic-border-around-active-fields-using-css.html*/
+body div#container div#potatoes_container div#todo_list ul li input[type=text]:focus {
+    outline: none;
+}
+
+input[type=checkbox] {
+    border-radius: 2em;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+body div#container div#potatoes_container div#completed_todo {
+}
+
+body div#container div#potatoes_container div#completed_todo div {
+    border: 1px solid #ccc;
+    padding: 7px 7px 7px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 16px;
+    font-size: .9rem;
+    color: #888;
+}
+
+body div#container div#potatoes_container div#completed_todo ul {
+    padding: 0;
+}
+
+body div#container div#potatoes_container div#completed_todo ul li {
+    list-style-type: none;
+    margin: 9px 6px;
+}
+
+body div#container div#potatoes_container div#completed_todo ul li span {
+    text-decoration: line-through;
+    color: #999;
+}
