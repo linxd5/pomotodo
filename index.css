@@ -197,3 +197,7 @@ body div#container div#potatoes_container div#completed_todo ul li span {
     text-decoration: line-through;
     color: #999;
 }
+
+.dragOver {
+    border: 2px dashed red;
+}
