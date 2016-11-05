@@ -37,3 +37,5 @@ onblur函数只能在input标签中使用，在其它标签中绑定onblur函数
 #### 5. 拖拽功能的实现
 
 拖拽功能的实现主要使用的HTML5的drag and drop ([参考一](https://www.html5rocks.com/zh/tutorials/dnd/basics/)、[参考二](http://www.w3cfuns.com/notes/14960/94d52ecd0037ff37e4471e4d27443804:storey-1.html)、[参考三](http://www.cnblogs.com/ijjyo/p/4300717.html))。 按照流程依次使用了的dragstart、dragover和drop函数。值得一提的是，在drop的过程中，被拖拽元素有可能放在某个元素中，或者放到某个元素的父元素中，这时候就需要使用tagName来判断元素的标签。
+
+拖拽功能的顺序有问题！拖拽放下的时候，检测source和target的相对位置，然后决定是使用insertBefore还是insertAfter!

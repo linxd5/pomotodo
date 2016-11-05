@@ -20,19 +20,18 @@ function handleDrop(ev) {
     var data = ev.dataTransfer.getData('text');
     var source_li = document.getElementById(data);
     var target = ev.target;
-    if (target.tagName == 'LI') {
-        if (source_li.id == target.id) return;
-        source_input = source_li.getElementsByTagName('input')[1];
-        source_li.removeChild(source_input);
-        source_li.appendChild(target.getElementsByTagName('input')[1]);
-        target.appendChild(source_input);
+    var position = [];
+    var todo_li = document.getElementById('todo_list').getElementsByTagName('li');
+    for (i=0; i<todo_li.length; i++) {
+        position[todo_li[i].id] = i;
     }
-    else {
-        if (source_li.id == target.parentNode.id) return;
-        source_input = source_li.getElementsByTagName('input')[1];
-        source_li.removeChild(source_input);
-        target.parentNode.appendChild(source_input);
-        source_li.appendChild(target);
+
+    target_li = target.tagName == 'LI' ? target : target.parentNode;
+    if (source_li.id == target_li.id) return;
+    if (position[source_li.id] > position[target_li.id]) {
+        source_li.parentNode.insertBefore(source_li, target_li);
+    } else {
+        source_li.parentNode.insertBefore(source_li, target_li.nextSibling);
     }
 }
 
