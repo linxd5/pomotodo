@@ -119,7 +119,7 @@ body div#container div#potatoes_container div#todo_input input {
     font-size: 1em;
 }
 
-body div#container div#potatoes_container div#todo_input object#enter_svg {
+body div#container div#potatoes_container div#todo_input img#enter_png {
     position: absolute;
     right: 0;
     top: 0;
@@ -131,9 +131,6 @@ body div#container div#potatoes_container div#todo_input object#enter_svg {
     box-sizing: border-box;
     line-height: 1.7em;
     display: none;
-}
-
-body div#container div#potatoes_container div#todo_input object#enter_svg svg:hover {
     cursor: pointer;
 }
 
@@ -145,6 +142,7 @@ body div#container div#potatoes_container div#todo_list ul {
 body div#container div#potatoes_container div#todo_list ul li {
     list-style-type: none;
     padding: 6px 6px;
+    position: relative;
 }
 
 body div#container div#potatoes_container div#todo_list ul li input {
@@ -156,6 +154,7 @@ body div#container div#potatoes_container div#todo_list ul li input[type=text] {
     border: 0;
     font-size: .97em;
     margin-left: 4px;
+    width: 75%;
 }
 
 /*http://www.solagirl.net/override-chromes-automatic-border-around-active-fields-using-css.html*/
@@ -169,7 +168,45 @@ input[type=checkbox] {
     background-color: #fff;
 }
 
-body div#container div#potatoes_container div#completed_todo {
+img.delete_png {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1.7em;
+    padding: .3em;
+    fill: #999;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.7em;
+    display: none;
+    cursor: pointer;
+}
+
+
+body div#container div#potatoes_container div#completed_todo ul {
+    padding: 0 0 1em;
+    border-bottom: 1px solid #DDD;
+}
+
+body div#container div#potatoes_container div#completed_todo ul li {
+    list-style-type: none;
+    padding: 6px 6px;
+    position: relative;
+}
+
+body div#container div#potatoes_container div#completed_todo ul li input {
+    margin: 0;
+}
+
+body div#container div#potatoes_container div#completed_todo ul li input[type=text] {
+    padding: 0;
+    border: 0;
+    font-size: .97em;
+    margin-left: 4px;
+    text-decoration: line-through;
+    color: #999;
+    width: 75%;
 }
 
 body div#container div#potatoes_container div#completed_todo div {
@@ -182,22 +219,4 @@ body div#container div#potatoes_container div#completed_todo div {
     line-height: 16px;
     font-size: .9rem;
     color: #888;
-}
-
-body div#container div#potatoes_container div#completed_todo ul {
-    padding: 0;
-}
-
-body div#container div#potatoes_container div#completed_todo ul li {
-    list-style-type: none;
-    margin: 9px 6px;
-}
-
-body div#container div#potatoes_container div#completed_todo ul li span {
-    text-decoration: line-through;
-    color: #999;
-}
-
-.dragOver {
-    border: 2px dashed red;
 }

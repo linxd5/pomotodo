@@ -5,6 +5,7 @@
     <title id="title">Pomotodo</title>
     <link rel="icon" type="image/x-icon" href="./tomato.ico" />
     <script type="text/javascript" src="potatoes.js"></script>
+    <script type="text/javascript" src="tomatoes.js"></script>
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
@@ -28,22 +29,25 @@
             </div>
             <div id="potatoes_container">
                 <div id="todo_input">
-                    <input type="text" name="to_do_input" placeholder="Add a new todo" />
-                    <object id="enter_svg" data="Enter.svg" type="image/svg+xml"></object>
+                    <input type="text" name="to_do_input" placeholder="Add a new todo" maxlength="19" />
+                    <img id="enter_png" src="enter.png" alt="enter_icon" />
                 </div>
                 <div id="todo_list">
                     <ul>
                         <li id="20161104220959" draggable="true">
-                            <input type="checkbox" />
+                            <input type="checkbox" name="todo_checkbox" />
                             <input type="text" value="系分课部件设计作业" readonly="readonly"/>
+                            <img class="delete_png" src="delete.png" alt="delete_icon" />
                         </li>
                         <li id="20161104221011" draggable="true">
-                            <input type="checkbox" />
+                            <input type="checkbox" name="todo_checkbox" />
                             <input type="text" value="多媒体设计大作业JS部分" readonly="readonly"/>
+                            <img class="delete_png" src="delete.png" alt="delete_icon" />
                         </li>
                         <li id="20161104221111" draggable="true">
-                            <input type="checkbox" />
+                            <input type="checkbox" name="todo_checkbox" />
                             <input type="text" value="英语期中听力准备" readonly="readonly"/>
+                            <img class="delete_png" src="delete.png" alt="delete_icon" />
                         </li>
                     </ul>
                 </div>
@@ -51,10 +55,14 @@
                     <div>Completed todos</div>
                     <ul>
                         <li>
-                            <input type="checkbox" checked /> <span> 多媒体设计大作业HTML部分 </span>
+                            <input type="checkbox" checked />
+                            <input type="text" value="多媒体设计大作业HTML部分" readonly="readonly"/>
+                            <img class="delete_png" src="delete.png" alt="delete_icon" />
                         </li>
                         <li>
-                            <input type="checkbox" checked /> <span> MLaPP小组展示</span>
+                            <input type="checkbox" checked />
+                            <input type="text" value="MLaPP小组展示" readonly="readonly"/>
+                            <img class="delete_png" src="delete.png" alt="delete_icon" />
                         </li>
                     </ul>
                 </div>
